@@ -1,25 +1,10 @@
 ---
-interface Props {
-	title: string;
-	description: string;
-}
-
-const { description, title } = Astro.props;
-import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content={description} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="stylesheet" href="../../public/styles/globals.css" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<Header />
-		<slot />
-	</body>
-</html>
+<Layout
+	title="Guidelines - validación"
+	description="Herramienta de validación - listado de elementos a valorar"
+>
+	<main>Placeholder</main>
+</Layout>
