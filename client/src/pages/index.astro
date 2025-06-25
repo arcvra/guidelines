@@ -19,7 +19,10 @@ import Button from "../components/Button.astro";
 					<h3>Resum</h3>
 					{
 						Replanteo.Replanteig.Resum?.map((item) => (
-							<Label id={`replanteig-${item.id}`} text={item.content} />
+							<Label
+								id={`replanteig-${item.id}`}
+								text={item.content}
+							/>
 						))
 					}
 				</section>
@@ -27,7 +30,10 @@ import Button from "../components/Button.astro";
 					<h3>Detall per aula</h3>
 					{
 						Replanteo.Replanteig["Detall per aula"]?.map((item) => (
-							<Label id={`replanteig-${item.id}`} text={item.content} />
+							<Label
+								id={`replanteig-${item.id}`}
+								text={item.content}
+							/>
 						))
 					}
 					<Button />
@@ -42,7 +48,10 @@ import Button from "../components/Button.astro";
 					{
 						Instalacion.Instal·lació["Resum instal·lació"]?.map(
 							(item) => (
-								<Label id={`instalacio-${item.id}`} text={item.content} />
+								<Label
+									id={`instalacio-${item.id}`}
+									text={item.content}
+								/>
 							),
 						)
 					}
@@ -53,7 +62,10 @@ import Button from "../components/Button.astro";
 						Instalacion.Instal·lació[
 							"Detall per aula instal·lació"
 						]?.map((item) => (
-							<Label id={`instalacio-${item.id}`} text={item.content} />
+							<Label
+								id={`instalacio-${item.id}`}
+								text={item.content}
+							/>
 						))
 					}
 					<Button />
