@@ -16,6 +16,14 @@ const { id, text } = Astro.props;
         display: flex;
         align-items: center;
         gap: 1rem;
+        padding-inline: 1rem;
+        cursor: pointer;
+    }
+
+    label:hover {
+        border-radius: 0.5rem;
+        background: var(--hover);
+        transition: 0.3s ease;
     }
 
     input[type="checkbox"] {
