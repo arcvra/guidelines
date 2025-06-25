@@ -1,0 +1,7 @@
+{
+    "Plano": [
+        { "id": 1, "content": "Cantidad de clases coincide" },
+        { "id": 2, "content": "Todos los identificadores y códigos de aula corresponden" },
+        { "id": 3, "content": "Elementos no modificables (códigos como comentarios, etc.)" }
+    ]
+}

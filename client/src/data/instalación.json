@@ -1,0 +1,49 @@
+{
+  "Instal·lació": {
+    "Resum instal·lació": [
+      { "id": 1, "content": "Datos centro correcto y completado" },
+      { "id": 2, "content": "Nombre directora/a sin cortar" },
+      { "id": 3, "content": "Cantidad de paneles correcta" },
+      { "id": 4, "content": "Nombre de aula correcto" },
+      { "id": 5, "content": "SN y SACE coinciden con detalle por aula" },
+      { "id": 6, "content": "Resumen instalación de paneles coincide con demanda instalada" },
+      { "id": 7, "content": "La suma del tipo y cantidad de paneles coincide con recuento por aula" },
+      { "id": 8, "content": "La suma del tipo y cantidad de soportes coincide con recuento por aula" },
+      { "id": 9, "content": "Desinstalación de paneles o proyectores" },
+      { "id": 10, "content": "Instalación de punt elèctric" },
+      { "id": 11, "content": "Instalación de punt de xarxa" },
+      { "id": 12, "content": "Instalación de soportes correspondientes" },
+      { "id": 13, "content": "Sense serveis" },
+      { "id": 14, "content": "Cantidad, tipos, destinos, modelos y SACEs de adequació coinciden con sumas por aula" },
+      { "id": 15, "content": "Datos y firma de David Quiñonero" },
+      { "id": 16, "content": "Fecha de firma debajo de cuadrícula de firma de D.Q." },
+      { "id": 17, "content": "Datos director/a completos, sin cortar" }
+    ],
+    "Detall per aula instal·lació": [
+      { "id": 1, "content": "Datos centro correcto y completado" },
+      { "id": 2, "content": "Nombre directora/a sin cortar" },
+      { "id": 3, "content": "Edificio y planta correctos" },
+      { "id": 4, "content": "Alias sin código (PL00–P01…)" },
+      { "id": 5, "content": "Marca y modelo de panel correctos" },
+      { "id": 6, "content": "Marca y modelo de soporte correctos" },
+      { "id": 7, "content": "SACE y SN de panel correctos" },
+      { "id": 8, "content": "SACE y SN de soporte correctos" },
+      { "id": 9, "content": "Todos los checks" },
+      { "id": 10, "content": "Servicios o “SENSE SERVEIS”" },
+      { "id": 11, "content": "Adequació correcta corresponde con comentario de elementos desinstalados" },
+      { "id": 12, "content": "Destino correcto" },
+      { "id": 13, "content": "Marca y modelo de elemento retirado" },
+      { "id": 14, "content": "SACE de elemento retirado (si disponible)" },
+      { "id": 15, "content": "Foto – a color / calidad decente" },
+      { "id": 16, "content": "Alias de aula legible" },
+      { "id": 17, "content": "Coincide con replanteo" },
+      { "id": 18, "content": "Coincide con adequació" },
+      { "id": 19, "content": "Recuento de elementos desinstalados" },
+      { "id": 20, "content": "Elementos no retirados" },
+      { "id": 21, "content": "Destino correcto" },
+      { "id": 22, "content": "Cambios de soporte justificados (si aplica)" },
+      { "id": 23, "content": "Comentarios de aula docente (si aplica)" },
+      { "id": 24, "content": "Información de TIC / SN de projector/panel" }
+    ]
+  }
+}

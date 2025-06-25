@@ -1,0 +1,41 @@
+{
+  "Replanteig": {
+    "Resum": [
+      { "id": 1, "content": "Datos centro correcto y completado" },
+      { "id": 2, "content": "Nombre director/a sin cortar" },
+      { "id": 3, "content": "Demanda panells coincide con demanda original en Planificació General – Dades Generals" },
+      { "id": 4, "content": "Auditoria panells coincide con demanda replanteig en Planificació General – Dades Generals" },
+      { "id": 5, "content": "Instalación de punts de xarxa y punts elèctrics coincide con Acta de instalación del técnico en Drive" },
+      { "id": 6, "content": "Datos y firma de David Quiñonero" },
+      { "id": 7, "content": "Fecha de firma debajo de cuadrícula de firma de D.Q." },
+      { "id": 8, "content": "Datos director/a completos, sin cortar" }
+    ],
+    "Detall per aula": [
+      { "id": 1, "content": "Datos centro correcto y completado" },
+      { "id": 2, "content": "Nombre directora/a sin cortar" },
+      { "id": 3, "content": "Edificio y planta correctos" },
+      { "id": 4, "content": "Alias sin código (PL00–P01…)" },
+      { "id": 5, "content": "Tipo de panel correcto" },
+      { "id": 6, "content": "Tipo de pared correcto" },
+      { "id": 7, "content": "Tipo de etapa adecuado" },
+      { "id": 8, "content": "Puntos eléctricos y de xarxa correctos" },
+      { "id": 9, "content": "Px | Pe = 0 → “NO ES REQUEREIX INSTAL·LACIÓ”, si no → “ES REQUEREIX INSTAL·LACIÓ”" },
+      { "id": 10, "content": "Xarxa operativa marcada como “SI”" },
+      { "id": 11, "content": "Roseta (opcional)" },
+      { "id": 12, "content": "Adequació correcta – coincide con comentario de retirada" },
+      { "id": 13, "content": "Destinació correcta – coincide con Observacions" },
+      { "id": 14, "content": "Modelo y marca" },
+      { "id": 15, "content": "SACE (si disponible)" },
+      { "id": 16, "content": "Si hay retirada → “ES REQUEREIX ADEQUACIÓ” / “NO ES REQUEREIX ADEQUACIÓ”" },
+      { "id": 17, "content": "Foto replanteo" },
+      { "id": 18, "content": "Foto a color / legible / calidad decente" },
+      { "id": 19, "content": "Se ven los elementos a retirar" },
+      { "id": 20, "content": "Alias del aula" },
+      { "id": 21, "content": "Croquis" },
+      { "id": 22, "content": "Resumen de material a retirar" },
+      { "id": 23, "content": "Destino de los elementos retirados" },
+      { "id": 24, "content": "Cambios de soporte justificados" },
+      { "id": 25, "content": "Comentarios de aula docente (si aplica)" }
+    ]
+  }
+}
