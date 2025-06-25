@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Label from "../components/Label.astro";
 import Replanteo from "../data/replanteo.json";
+import Instalacion from "../data/instalacion.json";
 ---
 
 <Layout
@@ -16,6 +17,16 @@ import Replanteo from "../data/replanteo.json";
 					Replanteo.Replanteig.Resum.map((item) => (
 						<Label id={item.id} text={item.content} />
 					))
+				}
+			</form>
+		</section>
+		<section>
+			<form>
+				<h2>Instal·lació</h2>
+				{
+					Instalacion.Instal·lació["Resum instal·lació"].map(
+						(item) => <Label id={item.id} text={item.content} />,
+					)
 				}
 			</form>
 		</section>
