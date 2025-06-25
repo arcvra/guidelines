@@ -1,10 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Label from "../components/Label.astro";
+import Replanteo from "../data/replanteo.json";
 ---
 
 <Layout
 	title="Guidelines - validación"
 	description="Herramienta de validación - listado de elementos a valorar"
 >
-	<main>Placeholder</main>
+	<main>
+		<section>
+			<form>
+				<h2>Replanteig</h2>
+				{
+					Replanteo.Replanteig.Resum.map((item) => (
+						<Label id={item.id} text={item.content} />
+					))
+				}
+			</form>
+		</section>
+	</main>
 </Layout>
