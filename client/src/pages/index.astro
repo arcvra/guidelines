@@ -10,7 +10,7 @@ import Instalacion from "../data/instalacion.json";
 	description="Herramienta de validación - listado de elementos a valorar"
 >
 	<main>
-		<section>
+		<section class="container">
 			<form>
 				<h2>Replanteig</h2>
 
@@ -32,7 +32,7 @@ import Instalacion from "../data/instalacion.json";
 				</section>
 			</form>
 		</section>
-		<section>
+		<section class="container">
 			<form>
 				<h2>Instal·lació</h2>
 				<section>
@@ -59,3 +59,16 @@ import Instalacion from "../data/instalacion.json";
 		</section>
 	</main>
 </Layout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+	section.container {
+		padding: 1.5rem;
+		border: 1px solid var(--foreground);
+		border-radius: 1.2rem;
+	}
+</style>
