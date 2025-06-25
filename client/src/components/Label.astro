@@ -10,3 +10,20 @@ const { id, text } = Astro.props;
     <input id={`${id}-check`} name={`${id}-check`} type="checkbox" />
     <p>{text}</p>
 </label>
+
+<style>
+    label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    input[type="checkbox"] {
+        height: 24px;
+        width: 24px;
+    }
+
+    p {
+        width: 100%;
+    }
+</style>
