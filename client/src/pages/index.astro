@@ -18,7 +18,7 @@ import Instalacion from "../data/instalacion.json";
 					<h3>Resum</h3>
 					{
 						Replanteo.Replanteig.Resum?.map((item) => (
-							<Label id={item.id} text={item.content} />
+							<Label id={`replanteig-${item.id}`} text={item.content} />
 						))
 					}
 				</section>
@@ -26,7 +26,7 @@ import Instalacion from "../data/instalacion.json";
 					<h3>Detall per aula</h3>
 					{
 						Replanteo.Replanteig["Detall per aula"]?.map((item) => (
-							<Label id={item.id} text={item.content} />
+							<Label id={`replanteig-${item.id}`} text={item.content} />
 						))
 					}
 				</section>
@@ -40,7 +40,7 @@ import Instalacion from "../data/instalacion.json";
 					{
 						Instalacion.Instal·lació["Resum instal·lació"]?.map(
 							(item) => (
-								<Label id={item.id} text={item.content} />
+								<Label id={`instalacio-${item.id}`} text={item.content} />
 							),
 						)
 					}
@@ -51,7 +51,7 @@ import Instalacion from "../data/instalacion.json";
 						Instalacion.Instal·lació[
 							"Detall per aula instal·lació"
 						]?.map((item) => (
-							<Label id={item.id} text={item.content} />
+							<Label id={`instalacio-${item.id}`} text={item.content} />
 						))
 					}
 				</section>
