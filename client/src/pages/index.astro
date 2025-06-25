@@ -13,21 +13,46 @@ import Instalacion from "../data/instalacion.json";
 		<section>
 			<form>
 				<h2>Replanteig</h2>
-				{
-					Replanteo.Replanteig.Resum.map((item) => (
-						<Label id={item.id} text={item.content} />
-					))
-				}
+
+				<section>
+					<h3>Resum</h3>
+					{
+						Replanteo.Replanteig.Resum.map((item) => (
+							<Label id={item.id} text={item.content} />
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall per aula</h3>
+					{
+						Replanteo.Replanteig["Detall per aula"].map((item) => (
+							<Label id={item.id} text={item.content} />
+						))
+					}
+				</section>
 			</form>
 		</section>
 		<section>
 			<form>
 				<h2>Instal·lació</h2>
-				{
-					Instalacion.Instal·lació["Resum instal·lació"].map(
-						(item) => <Label id={item.id} text={item.content} />,
-					)
-				}
+				<section>
+					<h3>Resum</h3>
+					{
+						Instalacion.Instal·lació["Resum instal·lació"].map(
+							(item) => (
+								<Label id={item.id} text={item.content} />
+							),
+						)
+					}
+				</section>
+				<section>
+					<h3>Detall per aula</h3>
+					{
+						Replanteo.Replanteig["Detall per aula"].map((item) => (
+							<Label id={item.id} text={item.content} />
+						))
+					}
+				</section>
 			</form>
 		</section>
 	</main>
