@@ -12,10 +12,14 @@
         border: 1px solid var(--foreground);
     }
     a {
+        padding: 0.2rem;
+        border: 1px solid transparent;
+        border-radius: 0.2rem;
         text-decoration: none;
         color: var(--foreground);
         &:hover {
-            color: var(--hover);
+            border: 1px solid var(--foreground);
+            background: var(--hover);
             transition: 0.3s ease;
         }
     }
