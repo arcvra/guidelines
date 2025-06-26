@@ -3,9 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import Label from "../components/Label.astro";
 import Replanteo from "../data/replanteo.json";
 import Instalacion from "../data/instalacion.json";
+import Albarans from "../data/albaran.json";
+import Plano from "../data/plano.json";
 import Button from "../components/Button.astro";
 import Nav from "../components/Navbar.astro";
 import "../styles/globals.css";
+
+const Planos = Plano.Plano;
+const Replanteig = Replanteo.Replanteig;
+const Instalacio = Instalacion.Instal·lació;
+const Panells = Albarans.Panells;
 ---
 
 <Layout
@@ -16,6 +23,23 @@ import "../styles/globals.css";
 		<header>
 			<Nav />
 		</header>
+		<section id="plano" class="container">
+			<form>
+				<h2>Plànol</h2>
+
+				<section>
+					<h3>Plànol del centre</h3>
+					{
+						Planos.map((item) => (
+							<Label
+								id={`plano-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+			</form>
+		</section>
 		<section id="replanteig" class="container">
 			<form>
 				<h2>Replanteig</h2>
@@ -23,7 +47,7 @@ import "../styles/globals.css";
 				<section>
 					<h3>Resum</h3>
 					{
-						Replanteo.Replanteig.Resum?.map((item) => (
+						Replanteig.Resum?.map((item) => (
 							<Label
 								id={`replanteig-${item.id}`}
 								text={item.content}
@@ -34,7 +58,7 @@ import "../styles/globals.css";
 				<section>
 					<h3>Detall per aula</h3>
 					{
-						Replanteo.Replanteig["Detall per aula"]?.map((item) => (
+						Replanteig["Detall per aula"]?.map((item) => (
 							<Label
 								id={`replanteig-${item.id}`}
 								text={item.content}
@@ -45,13 +69,24 @@ import "../styles/globals.css";
 				</section>
 			</form>
 		</section>
-		<section id="instalacio"  class="container">
+		<section id="instalacio" class="container">
 			<form>
 				<h2>Instal·lació</h2>
 				<section>
 					<h3>Resum</h3>
 					{
-						Instalacion.Instal·lació["Resum instal·lació"]?.map(
+						Instalacio["Resum instal·lació"]?.map((item) => (
+							<Label
+								id={`instalacio-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall per aula</h3>
+					{
+						Instalacio["Detall per aula instal·lació"]?.map(
 							(item) => (
 								<Label
 									id={`instalacio-${item.id}`}
@@ -60,20 +95,45 @@ import "../styles/globals.css";
 							),
 						)
 					}
+					<Button />
 				</section>
+			</form>
+		</section>
+		<section id="albaraPanells" class="container">
+			<form>
+				<h2>Albarà Panells</h2>
 				<section>
-					<h3>Detall per aula</h3>
+					<h3>Dades</h3>
 					{
-						Instalacion.Instal·lació[
-							"Detall per aula instal·lació"
-						]?.map((item) => (
+						Panells.at(0)?.Dades.map((item) => (
 							<Label
-								id={`instalacio-${item.id}`}
+								id={`panells-${item.id}`}
 								text={item.content}
 							/>
 						))
 					}
-					<Button />
+				</section>
+				<section>
+					<h3>Detall equipament</h3>
+					{
+						Panells.at(1)?.["Detall equipament"].map((item) => (
+							<Label
+								id={`panells-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall equipament</h3>
+					{
+						Panells.at(2)?.["Signatura tècnic"].map((item) => (
+							<Label
+								id={`panells-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
 				</section>
 			</form>
 		</section>
@@ -81,6 +141,12 @@ import "../styles/globals.css";
 </Layout>
 
 <style>
+	header {
+		background: var(--background);
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
 	main {
 		display: flex;
 		flex-direction: column;
@@ -95,6 +161,6 @@ import "../styles/globals.css";
 	section:has(h3) {
 		display: flex;
 		flex-direction: column;
-		gap: .5rem;
+		gap: 0.5rem;
 	}
 </style>
