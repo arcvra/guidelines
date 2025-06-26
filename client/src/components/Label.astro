@@ -17,13 +17,19 @@ const { id, text } = Astro.props;
         align-items: center;
         gap: 1rem;
         padding-inline: 1rem;
+        border-radius: 0.5rem;
         cursor: pointer;
+        background: var(--odd);
     }
 
     label:hover {
         border-radius: 0.5rem;
         background: var(--hover);
         transition: 0.3s ease;
+    }
+
+    label:nth-child(even) {
+        background: var(--even);
     }
 
     input[type="checkbox"] {
