@@ -9,6 +9,9 @@ import Button from "../components/Button.astro";
 import Nav from "../components/Navbar.astro";
 import "../styles/globals.css";
 
+const Planos = Plano.Plano;
+const Replanteig = Replanteo.Replanteig;
+const Instalacio = Instalacion.Instal·lació;
 const Panells = Albarans.Panells;
 ---
 
@@ -27,7 +30,7 @@ const Panells = Albarans.Panells;
 				<section>
 					<h3>Plànol del centre</h3>
 					{
-						Plano.Plano.map((item) => (
+						Planos.map((item) => (
 							<Label
 								id={`plano-${item.id}`}
 								text={item.content}
@@ -44,7 +47,7 @@ const Panells = Albarans.Panells;
 				<section>
 					<h3>Resum</h3>
 					{
-						Replanteo.Replanteig.Resum?.map((item) => (
+						Replanteig.Resum?.map((item) => (
 							<Label
 								id={`replanteig-${item.id}`}
 								text={item.content}
@@ -55,7 +58,7 @@ const Panells = Albarans.Panells;
 				<section>
 					<h3>Detall per aula</h3>
 					{
-						Replanteo.Replanteig["Detall per aula"]?.map((item) => (
+						Replanteig["Detall per aula"]?.map((item) => (
 							<Label
 								id={`replanteig-${item.id}`}
 								text={item.content}
@@ -72,7 +75,18 @@ const Panells = Albarans.Panells;
 				<section>
 					<h3>Resum</h3>
 					{
-						Instalacion.Instal·lació["Resum instal·lació"]?.map(
+						Instalacio["Resum instal·lació"]?.map((item) => (
+							<Label
+								id={`instalacio-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall per aula</h3>
+					{
+						Instalacio["Detall per aula instal·lació"]?.map(
 							(item) => (
 								<Label
 									id={`instalacio-${item.id}`}
@@ -80,19 +94,6 @@ const Panells = Albarans.Panells;
 								/>
 							),
 						)
-					}
-				</section>
-				<section>
-					<h3>Detall per aula</h3>
-					{
-						Instalacion.Instal·lació[
-							"Detall per aula instal·lació"
-						]?.map((item) => (
-							<Label
-								id={`instalacio-${item.id}`}
-								text={item.content}
-							/>
-						))
 					}
 					<Button />
 				</section>
