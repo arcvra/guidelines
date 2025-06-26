@@ -4,6 +4,7 @@ import Label from "../components/Label.astro";
 import Replanteo from "../data/replanteo.json";
 import Instalacion from "../data/instalacion.json";
 import Button from "../components/Button.astro";
+import Nav from "../components/Navbar.astro";
 import "../styles/globals.css";
 ---
 
@@ -12,7 +13,10 @@ import "../styles/globals.css";
 	description="Herramienta de validación - listado de elementos a valorar"
 >
 	<main>
-		<section class="container">
+		<header>
+			<Nav />
+		</header>
+		<section id="replanteig" class="container">
 			<form>
 				<h2>Replanteig</h2>
 
@@ -41,7 +45,7 @@ import "../styles/globals.css";
 				</section>
 			</form>
 		</section>
-		<section class="container">
+		<section id="instalacio"  class="container">
 			<form>
 				<h2>Instal·lació</h2>
 				<section>

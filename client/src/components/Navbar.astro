@@ -1,0 +1,26 @@
+<nav>
+    <a href="#replanteig"> Replanteig </a>
+    <a href="#instalacio"> Instal·lació </a>
+</nav>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        border: 1px solid var(--foreground);
+    }
+    a {
+        padding: 0.2rem;
+        border: 1px solid transparent;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        color: var(--foreground);
+        &:hover {
+            border: 1px solid var(--foreground);
+            background: var(--hover);
+            transition: 0.3s ease;
+        }
+    }
+</style>
