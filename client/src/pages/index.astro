@@ -3,10 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Label from "../components/Label.astro";
 import Replanteo from "../data/replanteo.json";
 import Instalacion from "../data/instalacion.json";
+import Albarans from "../data/albaran.json";
 import Plano from "../data/plano.json";
 import Button from "../components/Button.astro";
 import Nav from "../components/Navbar.astro";
 import "../styles/globals.css";
+
+const Panells = Albarans.Panells;
 ---
 
 <Layout
@@ -92,6 +95,44 @@ import "../styles/globals.css";
 						))
 					}
 					<Button />
+				</section>
+			</form>
+		</section>
+		<section id="albaraPanells" class="container">
+			<form>
+				<h2>Albarà Panells</h2>
+				<section>
+					<h3>Dades</h3>
+					{
+						Panells.at(0)?.Dades.map((item) => (
+							<Label
+								id={`panells-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall equipament</h3>
+					{
+						Panells.at(1)?.["Detall equipament"].map((item) => (
+							<Label
+								id={`panells-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
+				</section>
+				<section>
+					<h3>Detall equipament</h3>
+					{
+						Panells.at(2)?.["Signatura tècnic"].map((item) => (
+							<Label
+								id={`panells-${item.id}`}
+								text={item.content}
+							/>
+						))
+					}
 				</section>
 			</form>
 		</section>
