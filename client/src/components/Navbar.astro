@@ -2,3 +2,21 @@
     <a href="#replanteig"> Replanteig </a>
     <a href="#instalacio"> Instal·lació </a>
 </nav>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        border: 1px solid var(--foreground);
+    }
+    a {
+        text-decoration: none;
+        color: var(--foreground);
+        &:hover {
+            color: var(--hover);
+            transition: 0.3s ease;
+        }
+    }
+</style>
