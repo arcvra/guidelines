@@ -22,8 +22,8 @@ const { id, text } = Astro.props;
         background: var(--odd);
     }
 
-    label:hover {
-        border-radius: 0.5rem;
+    label:hover,
+    label:nth-child(even):hover {
         background: var(--hover);
         transition: 0.3s ease;
     }
@@ -31,7 +31,6 @@ const { id, text } = Astro.props;
     label:nth-child(even) {
         background: var(--even);
     }
-
     input[type="checkbox"] {
         appearance: none;
         font: inherit;
