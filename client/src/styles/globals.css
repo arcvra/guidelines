@@ -8,7 +8,7 @@
     --odd: hsl(220 40 18);
 
     --checked: hsl(260 60 40);
-    --hover: hsl(260 60 40 / .3);
+    --hover: hsl(220 40 40 / .6);
 }
 
 @media (prefers-color-scheme: light) {
