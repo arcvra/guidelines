@@ -1,0 +1,52 @@
+{
+    "Panells": [
+        {
+            "Dades": [
+                {
+                    "id": 1,
+                    "content": "Logo telefónica no visible (no crítico)."
+                },
+                {
+                    "id": 2,
+                    "content": "Fecha de entrega de material correcta."
+                },
+                {
+                    "id": 3,
+                    "content": "Modelo y cantidad de paneles correctos."
+                },
+                {
+                    "id": 4,
+                    "content": "Modelo y cantidad de soportes correctos."
+                }
+            ]
+        },
+        {
+            "Detall equipament": [
+                {
+                    "id": 5,
+                    "content": "SN y SACEs legibles y sin cortar."
+                },
+                {
+                    "id": 6,
+                    "content": "Modelos de paneles correctos."
+                },
+                {
+                    "id": 7,
+                    "content": "Modelos de soportes correctos."
+                }
+            ]
+        },
+        {
+            "Signatura tècnic": [
+                {
+                    "id": 8,
+                    "content": "Firma del técnico legible."
+                },
+                {
+                    "id": 9,
+                    "content": "DNI, nombre, cargo y conformidad rellenados."
+                }
+            ]
+        }
+    ]
+}
