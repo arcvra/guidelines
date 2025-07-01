@@ -55,7 +55,7 @@ body {
 
 @media screen and (width >=750px) {
     body {
-        padding-inline: calc(1000vw / 4/10);
+        padding-inline: calc(1000vw / 6/10);
     }
 }
 
